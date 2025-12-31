@@ -31,8 +31,8 @@ export const geminiService = {
         }
       `;
 
-      // using Puter AI Chat
-      const response = await puter.ai.chat(prompt);
+      // using Puter AI Chat with fast model
+      const response = await puter.ai.chat(prompt, { model: 'gpt-4o-mini' });
       let text = response?.message?.content || response || "";
 
       // Cleanup markdown code blocks if present
@@ -72,7 +72,7 @@ export const geminiService = {
         - Output ONLY the text.
       `;
 
-      const response = await puter.ai.chat(prompt);
+      const response = await puter.ai.chat(prompt, { model: 'gpt-4o-mini' });
       const text = response?.message?.content || response || "";
 
       return text ? text.replace(/"/g, '').trim() : "Special Offer";
@@ -121,7 +121,7 @@ export const geminiService = {
         }
       `;
 
-      const response = await puter.ai.chat(prompt);
+      const response = await puter.ai.chat(prompt, { model: 'gpt-4o-mini' });
       let text = response?.message?.content || response || "";
 
       // Cleanup markdown code blocks if present
@@ -154,9 +154,9 @@ export const geminiService = {
         No text, no watermarks.
       `;
 
+      // Using gpt-image-1-mini for fast generation
       const imageElement = await puter.ai.txt2img(prompt, {
-        model: 'dall-e-3',
-        quality: 'hd'
+        model: 'gpt-image-1-mini'
       });
 
       // Puter txt2img returns an HTMLImageElement
