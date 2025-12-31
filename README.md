@@ -3,8 +3,7 @@
 
 RetailGenius AI is a powerful web-based tool designed to help retail marketers create high-impact, compliant digital advertising assets. It leverages Generative AI (powered by **Puter.js**) to automate creative strategy, copywriting, and visual design while strictly enforcing retailer compliance guidelines (Appendix A & B).
 
-![RetailGenius AI](https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6) 
-*(Note: Replace with actual screenshot if available)*
+![RetailGenius AI Application Screenshot](./screenshot.png)
 
 ## ✨ Key Features
 
